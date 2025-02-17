@@ -115,6 +115,13 @@ namespace _5PaisaLibrary
             }
         }
 
+        #region SetAccessToken
+        public void SetAccessToken(Token token)
+        {
+            this.Token = token;
+        }
+        #endregion
+
         #region OuthLogin
         public OutputBaseClass GetOuthLogin(string RequestToken)
         {
@@ -133,6 +140,7 @@ namespace _5PaisaLibrary
 
                 });
                 var json = POSTWebRequest(null, URL, dataStringSession);
+
                 agr = JsonConvert.DeserializeObject<TokenResponse>(json);
                 if (agr.body.Status == "0")
                 {

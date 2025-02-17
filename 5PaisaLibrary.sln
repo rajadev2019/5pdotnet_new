@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "5PaisaLibrary", "5PaisaLibr
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test", "Test\Test.csproj", "{449FD37E-5644-4C11-9B01-FF1372EE753D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "5PaisaClientConsole", "5PaisaClientConsole\5PaisaClientConsole.csproj", "{0A849413-5229-49EF-9EF6-D9EB40E6CF73}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{449FD37E-5644-4C11-9B01-FF1372EE753D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{449FD37E-5644-4C11-9B01-FF1372EE753D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{449FD37E-5644-4C11-9B01-FF1372EE753D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0A849413-5229-49EF-9EF6-D9EB40E6CF73}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0A849413-5229-49EF-9EF6-D9EB40E6CF73}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0A849413-5229-49EF-9EF6-D9EB40E6CF73}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0A849413-5229-49EF-9EF6-D9EB40E6CF73}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

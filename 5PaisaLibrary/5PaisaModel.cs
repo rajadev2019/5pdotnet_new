@@ -20,6 +20,8 @@ namespace _5PaisaLibrary
         public string Status { get; set; }
         public string Message { get; set; }
 
+        public string RefreshToken {get; set;}
+
     }
 
     class TokenResponse

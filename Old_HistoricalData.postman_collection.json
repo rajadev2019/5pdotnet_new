@@ -1,0 +1,88 @@
+{
+	"variables": [],
+	"info": {
+		"name": "HISTORICAL DATA ",
+		"_postman_id": "57cde255-6fd9-cc20-4911-2fc563244a03",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "JWTOpenApiValidation",
+			"request": {
+				"url": "https://openapi.5paisa.com/VendorsAPI/Service1.svc/ValidateClientToken",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n \"ClientCode\": \"5000001\",\r\n \"JwtCode\": \"dgthbGcirvfvgIUzI1NiIsInR5cCI6IkpXVCJ9.dgt1bmlxdWVfbmfeviTEjicm9sZSI6IkNsaWVudCIsIm5iZiI6MTYyNDAwNDc2NCrgrilbIKDDE2MjQwMDQ3NjR9.dgts1lxGsZNpOrBMVdfeiECE1cU-xt6u7dgt\"\r\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "5paisa-openapi-historical tick data",
+			"request": {
+				"url": {
+					"raw": "https://openapi.5paisa.com/historical/n/c/1594/5m?from=2021-05-24&end=2021-05-27",
+					"protocol": "https",
+					"host": [
+						"openapi",
+						"5paisa",
+						"com"
+					],
+					"path": [
+						"historical",
+						"n",
+						"c",
+						"1594",
+						"5m"
+					],
+					"query": [
+						{
+							"key": "from",
+							"value": "2021-05-24",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "end",
+							"value": "2021-05-27",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Ocp-Apim-Subscription-Key",
+						"value": "c89dgt8d888a426d9e00db888b433027",
+						"description": ""
+					},
+					{
+						"key": "x-clientcode",
+						"value": "5000001",
+						"description": ""
+					},
+					{
+						"key": "x-auth-token",
+						"value": "dgthbGcirvfvgIUzI1NiIsInR5cCI6IkpXVCJ9.dgt1bmlxdWVfbmfeviTEjicm9sZSI6IkNsaWVudCIsIm5iZiI6MTYyNDAwNDc2NCrgrilbIKDDE2MjQwMDQ3NjR9.dgts1lxGsZNpOrBMVdfeiECE1cU-xt6u7pzs",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}

@@ -1,0 +1,315 @@
+{
+	"variables": [],
+	"info": {
+		"name": "Trading APIs",
+		"_postman_id": "6d903e5c-33fe-9dce-61b9-9f6360c7033f",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "OrderStatus",
+			"request": {
+				"url": "https://Openapi.5paisa.com/VendorsAPI/Service1.svc/OrderStatus",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"head\": {\n        \"appName\": \"5PTEST\",\n        \"appVer\": \"1.0\",\n        \"key\": \"hlDjK0bf1QGWGNdS8TWSmXmg3AuLYSCK\",\n        \"osName\": \"WEB\",\n        \"requestCode\": \"5POrdStatus\",\n        \"userId\": \"iNHGWCizqdL\",\n        \"password\": \"NLB0eTUjzg5\"\n    },\n    \"body\": {\n        \"ClientCode\": \"59999998\",\n        \"OrdStatusReqList\": [\n            {\n                \"Exch\": \"N\",\n                \"ExchType\": \"C\",\n                \"ScripCode\": 11809,\n                \"RemoteOrderID\": \"57129776201804050344475\"\n            }\n        ]\n    }\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "TradeInformation",
+			"request": {
+				"url": "https://Openapi.5paisa.com/VendorsAPI/Service1.svc/TradeInformation",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n     \"head\": {\n        \"appName\": \"5PTEST\",\n        \"appVer\": \"1.0\",\n        \"key\": \"hlDjK0bf1QGWGNdS8TWSmXmg3AuLYSCK\",\n        \"osName\": \"WEB\",\n        \"requestCode\": \"5PTrdInfo\",\n        \"userId\": \"iNHGWCizqdL\",\n        \"password\": \"NLB0eTUjzg5\"\n    },\n    \"body\": {\n        \"ClientCode\": \"59999998\",\n        \"TradeInformationList\": [\n            {\n                \"Exch\": \"N\",\n                \"ExchType\": \"C\",\n                \"ScripCode\": 11536,\n                \"RemoteOrderID\": \"5712977609111312242\"\n            },\n            {\n                \"Exch\": \"N\",\n                \"ExchType\": \"C\",\n                \"ScripCode\": 842,\n                \"RemoteOrderID\": \"C14135409140114001\"\n            },\n            {\n                \"Exch\": \"N\",\n                \"ExchType\": \"C\",\n                \"ScripCode\": 18011,\n                \"RemoteOrderID\": \"5712977613105215123\"\n            },\n            {\n                \"Exch\": \"N\",\n                \"ExchType\": \"C\",\n                \"ScripCode\": 10440,\n                \"RemoteOrderID\": \"5712977613114258355\"\n            },\n            {\n                \"Exch\": \"N\",\n                \"ExchType\": \"C\",\n                \"ScripCode\": 18011,\n                \"RemoteOrderID\": \"5712977613123434003\"\n            }\n        ]\n    }\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "V1/TradeBook",
+			"request": {
+				"url": "https://Openapi.5paisa.com/VendorsAPI/Service1.svc/V1/TradeBook",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"head\": {\n        \"appName\": \"5PTEST\",\n        \"appVer\": \"1.0\",\n        \"key\": \"hlDjK0bf1QGWGNdS8TWSmXmg3AuLYSCK\",\n        \"osName\": \"WEB\",\n        \"requestCode\": \"5PTrdBkV1\",\n        \"userId\": \"iNHGWCizqdL\",\n        \"password\": \"NLB0eTUjzg5\"\n    },\n    \"body\": {\n        \"ClientCode\": \"59999998\"\n    }\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "V2/OrderBook",
+			"request": {
+				"url": "https://Openapi.5paisa.com/VendorsAPI/Service1.svc/V2/OrderBook",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"head\": {\n        \"appName\": \"5PTEST\",\n        \"appVer\": \"1.0\",\n        \"key\": \"hlDjK0bf1QGWGNdS8TWSmXmg3AuLYSCK\",\n        \"osName\": \"WEB\",\n        \"requestCode\": \"5POrdBkV2\",\n        \"userId\": \"iNHGWCizqdL\",\n        \"password\": \"NLB0eTUjzg5\"\n    },\n    \"body\": {\n        \"ClientCode\": \"59999998\"\n    }\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "V3/Margin",
+			"request": {
+				"url": "https://Openapi.5paisa.com/VendorsAPI/Service1.svc/V3/Margin",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"head\": {\n        \"appName\": \"5PTEST\",\n        \"appVer\": \"1.0\",\n        \"key\": \"hlDjK0bf1QGWGNdS8TWSmXmg3AuLYSCK\",\n        \"osName\": \"WEB\",\n        \"requestCode\": \"5PMarginV3\",\n        \"userId\": \"iNHGWCizqdL\",\n        \"password\": \"NLB0eTUjzg5\"\n    },\n    \"body\": {\n        \"ClientCode\": \"59999998\"\n    }\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		
+		{	"name": "MarketFeed",
+			"request": {
+				"url": "https://Openapi.5paisa.com/VendorsAPI/Service1.svc/MarketFeed",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"head\": {\r\n        \"appName\": \"5PTEST\",\r\n       \"appVer\": \"1.0\",\r\n        \"key\": \"hlDjK0bf1QGWGNdS8TWSmXmg3AuLYSCK\",\r\n        \"osName\": \"Android\",\r\n        \"requestCode\": \"5PMF\",\r\n        \"userId\": \"iNHGWCizqdL\",\r\n        \"password\": \"NLB0eTUjzg5\"\r\n    },\r\n    \"body\": {\r\n\t\t\"Count\":1,\"MarketFeedData\":[\r\n\t\t\t{\"Exch\":\"N\",\"ExchType\":\"C\",\"Symbol\":\"BHEL\",\"Expiry\":\"\",\"StrikePrice\":\"0\",\"OptionType\":\"\"},\r\n\t\t\t{\"Exch\":\"N\",\"ExchType\":\"C\",\"Symbol\":\"RELIANCE\",\"Expiry\":\"\",\"StrikePrice\":\"0\",\"OptionType\":\"\"},\r\n\t\t\t{\"Exch\":\"N\",\"ExchType\":\"C\",\"Symbol\":\"AXISBANK\",\"Expiry\":\"\",\"StrikePrice\":\"0\",\"OptionType\":\"\"}\r\n\t\t],\"ClientLoginType\":0,\"LastRequestTime\":\"/Date(0)/\",\"RefreshRate\":\"H\"\r\n    }\r\n}"
+				},
+				"description": "Market feed API"
+			},
+			"response": []
+		},
+		
+		{	"name": "MarketDepth",  ---(Full Market Snapshot)
+			"request": {
+				"url": "https://Openapi.5paisa.com/VendorsAPI/Service1.svc/MarketDepth",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"head\": {\r\n      \"appName\": \"5P5677777\",\r\n        \"appVer\": \"1.0\",\r\n        \"key\": \"dgt3IOPFM6YFQ3SixJ3ooUxvInSLjY01\",\r\n        \"osName\": \"WEB\",\r\n        \"requestCode\": \"5PMD\",\r\n        \"userId\": \"GeUdgt8KE51\",\r\n        \"password\": \"lrDGtHCp2MN\"\r\n    },\r\n    \"body\": {\r\n        \"ClientCode\": \"56777777\",\r\n        \"Count\": \"1\",\r\n         \"Data\": [{\"Exchange\":\"N\",\"ExchangeType\":\"C\",\"ScripCode\":\"2885\"},{\"Exchange\":\"N\",\"ExchangeType\":\"C\",\"ScripCode\":\"1660\"},{\"Exchange\":\"\",\"ExchangeType\":\"\",\"ScripCode\":\"0\"}]\r\n    }\r\n}",
+				},
+				"description": "Market Depth API"
+			},
+			"response": []
+		},
+		
+		{	"name": "HISTORICAL DATA",  
+			"request": {
+				"url": "https://openapi.5paisa.com/historical/n/c/1594/5m?from=2021-05-24&end=2021-05-27",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Ocp-Apim-Subscription-Key",
+						"value": "c89dgt8d895a426d9e00db380b433027",
+						"description": ""
+					},
+					{
+						"key": "x-clientcode",
+						"value": "5000001",
+						"description": ""
+					},
+					{
+						"key": "x-auth-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cTR5IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IjU2NTY1NDAxIiwicm9sZSI6IkNsaWVudCIsIm5iZiI6MTYyMTYxNDI3MSwiZXhwIjoxNjI5MzkwMjcxLCJpYXQiOjE2MjE2MTQyNzF9.8Z7p5wYvVtgnPxlHlDR7j2b8lVfmKwR6RqgAzn76Ipg",
+						"description": ""
+					}
+				],	
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		
+		{	"name": "JWTOpenApiValidation",  ---(FOR HISTORICAL DATA )
+			"request": {
+				"url": "https://openapi.5paisa.com/VendorsAPI/Service1.svc/ValidateClientToken",
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n \"ClientCode\": \"5000001\",\r\n \"JwtCode\": \"dgthbGcirvfvgIUzI1NiIsInR5cCI6IkpXVCJ9.dgt1bmlxdWVfbmfeviTEjicm9sZSI6IkNsaWVudCIsIm5iZiI6MTYyNDAwNDc2NCrgrilbIKDDE2MjQwMDQ3NjR9.dgts1lxGsZNpOrBMVdfeiECE1cU-xt6u7dgt\"\r\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+	
+		{
+			"name": "V1/OrderRequest",
+			"request": {
+				"url": "https://Openapi.5paisa.com/VendorsAPI/Service1.svc/V1/OrderRequest",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"head\": {\r\n        \"appName\": \"5PTEST\",\r\n        \"appVer\": \"1.0\",\r\n        \"key\": \"hlDjK0bf1QGWGNdS8TWSmXmg3AuLYSCK\",\r\n        \"osName\": \"WEB\",\r\n        \"requestCode\": \"5POrdReq\",\r\n        \"userId\": \"iNHGWCizqdL\",\r\n        \"password\": \"NLB0eTUjzg5\"\r\n    },\r\n\t\"body\": {\r\n\t\t\"ClientCode\": \"59999998\",\r\n\t\t\"OrderFor\": \"P\",\r\n\t\t\"Exchange\": \"N\",\r\n\t\t\"ExchangeType\": \"C\",\r\n\t\t\"Price\": 717.65,\r\n\t\t\"OrderID\": 0,\r\n\t\t\"OrderType\": \"BUY\",\r\n\t\t\"Qty\": 2,\r\n\t\t\"OrderDateTime\": \"/Date(1556104184000)/\",\r\n\t\t\"ScripCode\": 11809,\r\n\t\t\"AtMarket\": false,\r\n\t\t\"RemoteOrderID\": \"57129776201804050344475\",\r\n\t\t\"ExchOrderID\": 0,\r\n\t\t\"DisQty\": 0,\r\n\t\t\"IsStopLossOrder\": false,\r\n\t\t\"StopLossPrice\": 0,\r\n\t\t\"IsVTD\": false,\r\n\t\t\"IOCOrder\": false,\r\n\t\t\"IsIntraday\": false,\r\n\t\t\"PublicIP\": \"192.168.88.41\",\r\n\t\t\"AHPlaced\": \"N\",\r\n\t\t\"ValidTillDate\": \"/Date(1556104184000)/\",\r\n\t\t\"iOrderValidity\": 0,\r\n\t\t\"TradedQty\": 0,\r\n\t\t\"OrderRequesterCode\": \"59999998\",\r\n\t\t\"AppSource\": 56\r\n\t}\r\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "V1/SMOOrderRequest",
+			"request": {
+				"url": "https://openapi.5paisa.com/VendorsAPI/Service1.svc/SMOOrderRequest",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"head\": {\r\n        \"appName\": \"5P50000091\",\r\n        \"appVer\": \"1.0\",\r\n        \"key\": \"zNfLvA5rBFGvdsHrDqemuG6faBBtFRrV\",\r\n        \"osName\": \"Android\",\r\n        \"requestCode\": \"SMOOrderRequest\",\r\n        \"userId\": \"iNHGWCizqdL\",\r\n        \"password\": \"NLB0eTUjzg5\"\r\n    },\r\n\t\"body\": {\r\n\t\t\"ClientCode\": \"50000091\",\r\n\t\t\"OrderRequesterCode\": \"50000091\",\r\n\t\t\"RequestType\": \"P\",\r\n\t\t\"BuySell\": \"B\",\r\n\t\t\"Qty\": 1,\r\n\t\t\"Exch\": B,\r\n\t\t\"ExchType\": \"C\",\r\n\t\t\"DisQty\": 0,\r\n\t\t\"AtMarket\": true,\r\n\t\t\"ExchOrderId\": 0,\r\n\t\t\"LimitPriceInitialOrder\": 0,\r\n\t\t\"TriggerPriceInitialOrder\": \"0\",\r\n\t\t\"LimitPriceProfitOrder\": 780,\r\n\t\t\"TriggerPriceForSL\": 386,\r\n\t\t\"TrailingSL\": 0,\r\n\t\t\"StopLoss\": 0,\r\n\t\t\"ScripCode\": 532215,\r\n\t\t\"OrderFor\": \"P\",\r\n\t\t\"UniqueOrderIDNormal\": \"5000009120154900067\",\r\n\t\t\"UniqueOrderIDSL\": 0,\r\n\t\t\"UniqueOrderIDLimit\": 0,\r\n\t\t\"LocalOrderIDNormal\": 5,\r\n\t\t\"LocalOrderIDSL\": 0,\r\n\t\t\"LocalOrderIDLimit\": 0,\r\n\t\t\"PublicIP\": \"192.168.88.41\",\r\n\t\t\"TradedQty\": 0,\r\n\t\t\"AppSource\": 6\r\n\t}\r\n}"
+					},
+
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "V1/ModifySMOOrder",
+			"request": {
+				"url": "https://openapi.5paisa.com/VendorsAPI/Service1.svc/ModifySMOOrder",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"head\": {\r\n        \"appName\": \"5P50000091\",\r\n        \"appVer\": \"1.0\",\r\n        \"key\": \"zNfLvA5rBFGvdsHrDqemuG6faBBtFRrV\",\r\n        \"osName\": \"Android\",\r\n        \"requestCode\": \"5PSModMOOrd\",\r\n        \"userId\": \"iNHGWCizqdL\",\r\n        \"password\": \"NLB0eTUjzg5\"\r\n    },\r\n\t\"body\": {\r\n\t\t\"ClientCode\": \"50000091\",\r\n\t\t\"OrderFor\": \"M\",\r\n\t\t\"Exchange\": B,\r\n\t\t\"ExchangeType\": \"C\",\r\n\t\t\"Price\": 717.65,\r\n\t\t\"OrderID\": 0,\r\n\t\t\"OrderType\": \"BUY\",\r\n\t\t\"Qty\": 1,\r\n\t\t\"OrderDateTime\": \"/Date(1569396922334)/\",\r\n\t\t\"ScripCode\": 532215,\r\n\t\t\"AtMarket\": false,\r\n\t\t\"RemoteOrderID\": \"5000009120154900067\",\r\n\t\t\"ExchOrderID\": 1606801033587000415,\r\n\t\t\"DisQty\": 0,\r\n\t\t\"TriggerPriceForSL\": 386,\r\n\t\t\"IsStopLossOrder\": false,\r\n\t\t\"IOCOrder\": true,\r\n\t\t\"IsIntraday\": false,\r\n\t\t\"IsVTD\": false,\r\n\t\t\"AHPlaced\": \"N\",\r\n\t\t\"PublicIP\": \"0.0.0.0\",\r\n\t\t\"iOrderValidity\": 0,\r\n\t\t\"TradedQty\": 0,\r\n\t\t\"OrderRequesterCode\": \"59999998\",\r\n\t\t\"TrailingSL\": 0.02,\r\n\t\t\"LegType\": 0,\r\n\t\t\"TMOPartnerOrderID\": 0,\r\n\t\t\"AppSource\": 6\r\n\t}\r\n}"},
+
+
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "V3/LoginRequestMobileNewbyEmail",
+			"request": {
+				"url": "https://Openapi.5paisa.com/VendorsAPI/Service1.svc/V3/LoginRequestMobileNewbyEmail",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"head\": {\n        \"appName\": \"5PTEST\",\n        \"appVer\": \"1.0\",\n        \"key\": \"hlDjK0bf1QGWGNdS8TWSmXmg3AuLYSCK\",\n        \"osName\": \"WEB\",\n        \"requestCode\": \"5PLoginV3\",\n        \"userId\": \"iNHGWCizqdL\",\n        \"password\": \"NLB0eTUjzg5\"\n    },\n    \"body\": {\n        \"Email_id\": \"asdasd\",\n        \"Password\": \"asdasd\",\n        \"LocalIP\": \"192.168.88.41\",\n        \"PublicIP\": \"192.168.88.41\",\n        \"HDSerailNumber\": \"\",\n        \"MACAddress\": \"\",\n        \"MachineID\": \"BM4653-D-039377.local.indiainfoline.com\",\n        \"VersionNo\": \"1.7\",\n        \"RequestNo\": \"1\",\n        \"My2PIN\": \"asdasd\",\n        \"ConnectionType\": \"1\"\n    }\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "V1/NetPositionNetWise",
+			"request": {
+				"url": "https://Openapi.5paisa.com/VendorsAPI/Service1.svc/V1/NetPositionNetWise",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"head\": {\n        \"appName\": \"5PTEST\",\n        \"appVer\": \"1.0\",\n        \"key\": \"hlDjK0bf1QGWGNdS8TWSmXmg3AuLYSCK\",\n        \"osName\": \"WEB\",\n        \"requestCode\": \"5PNPNWV1\",\n        \"userId\": \"iNHGWCizqdL\",\n        \"password\": \"NLB0eTUjzg5\"\n    },\n    \"body\": {\n        \"ClientCode\": \"59999998\"\n    }\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "V1/Holding",
+			"request": {
+				"url": "https://Openapi.5paisa.com/VendorsAPI/Service1.svc/V1/Holding",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n \"head\": {\r\n        \"appName\": \"5PTEST\",\r\n        \"appVer\": \"1.0\",\r\n        \"key\": \"hlDjK0bf1QGWGNdS8TWSmXmg3AuLYSCK\",\r\n        \"osName\": \"WEB\",\r\n        \"requestCode\": \"5PHoldingV1\",\r\n        \"userId\": \"iNHGWCizqdL\",\r\n        \"password\": \"NLB0eTUjzg5\"\r\n    },\r\n    \"body\": {\r\n       \"ClientCode\": \"59999998\"\r\n    }\r\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}

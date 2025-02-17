@@ -72,7 +72,7 @@ static Token ReadTokenFromFile(string filePath)
 
     // Deserialize JSON to an object
     var data = JsonSerializer.Deserialize<Token>(jsonString);
-    if ((data != null) && (GetDateTimeFromAccessToken(data.AccessToken) > DateTime.Now))
+    if ((data != null) && (GetDateTimeFromAccessToken(data.AccessToken) > DateTime.UtcNow))
     {
         Console.WriteLine($"TimeStamp: {GetDateTimeFromAccessToken(data.AccessToken)},\nRequest Token: {data.RequestToken},\nAccessToken: {data.AccessToken},\nRefreshToken: {data.RefreshToken}");
     
